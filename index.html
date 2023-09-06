@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAV BAR  -->
+
+    <header
+      class="header flex bg-yellow-300 p-4 items-center absolute w-full justify-between z-50"
+    >
+      <!-- NAVIGATION LOGO -->
+      <div class="logo ml-8 text-2xl font-bold">Word_Creation</div>
+      <!-- NAV OPTIONS -->
+      <ul class="nav-options hidden md:flex gap-10 px-10">
+        <li class="nav-lists">Why Us</li>
+        <li class="nav-lists">Services</li>
+        <li class="nav-lists">About Us</li>
+        <li class="nav-lists">Contact Us</li>
+      </ul>
+
+      <!-- MOBILE NAV -->
+      <div class="mobile-nav flex md:hidden cursor-pointer">
+        <div class="ham text-2xl pr-4"><i class="fa-solid fa-bars"></i></div>
+        <div class="cross hidden text-2xl pr-4">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- PAGE 1 -->
+
+    <div class="page-1 h-screen bg-[#03717F]">
+      <!-- CARD -->
+      <div
+        class="p1-card w-3/4 h-auto border-solid border-2 border-black m-auto relative top-24 rounded-lg text-[#6FFDBA] text-center bg-slate-800/60 items-center"
+      >
+        <h1 class="text-4xl md:text-8xl mt-5 md:mt-8">100% DISCOUNT</h1>
+        <h2 class="text-2xl md:text-7xl capitalize mt-2 md:mt-4">
+          on first assignment
+        </h2>
+        <button
+          class="m-auto border-solid border-2 border-[#6FFDBA] w-auto px-16 py-4 font-inter font-bold mt-2 md:mt-16 hover:bg-blue-600 hover:text-white hover:border-none rounded-lg"
+        >
+          Order Us
+        </button>
+        <!-- WORKED ON -->
+        <p class="text-white mt-5">We Have Worked On :</p>
+        <!-- UNIVERSITY LOGOS -->
+        <div class="w-on md:h-24 md:mt-5 flex px-4 w-auto m-auto justify-center">
+          <div class="w-on-left-part md:flex">
+            <img src="./ASSETS/UNIVERSITY LOGOS/Angila.jpg" alt="Angila" />
+            <img src="./ASSETS/UNIVERSITY LOGOS/BPP.jpg" alt="Bpp" />
+            <img src="./ASSETS/UNIVERSITY LOGOS/Brunel.jpg" alt="Brunel" />
+          </div>
+          <div class="w-on-right-part md:flex">
+            <img src="./ASSETS/UNIVERSITY LOGOS/Coventry.jpg" alt="Coventry" />
+            <img
+              src="./ASSETS/UNIVERSITY LOGOS/GreenWich.jpg"
+              alt="GreenWich"
+            />
+            <img
+              src="./ASSETS/UNIVERSITY LOGOS/Tesside University.jpg"
+              alt="Tesside"
+            />
+          </div>
+        </div>
+        <p class="text-white my-5 text-xl">And Many More</p>
+      </div>
+    </div>
+
+    <!-- PAGE 2 -->
+
+    <div class="page-2 h-screen w-full">
+        <h1 class="text-6xl text-center relative top-2 font-inter font-bold">We Offer</h1>
+        <!-- IMAGE SLIDER -->
+        <div class="p2-main border-solid border-2 border-red-500 m-auto mt-4 h-3/4 w-3/4 relative overflow-hidden duration-1000">
+            <img src="https://picsum.photos/id/237/1000/500" alt="img1">
+            <img src="https://picsum.photos/id/238/1000/500" alt="img2">
+            <img src="https://picsum.photos/id/239/1000/500" alt="img3">
+            <img src="https://picsum.photos/id/240/1000/500" alt="img4">
+            <img src="https://picsum.photos/id/241/1000/500" alt="img5">
+            <img src="https://picsum.photos/id/242/1000/500" alt="img6">
+            <img src="https://picsum.photos/id/243/1000/500" alt="img7">
+            <img src="https://picsum.photos/id/244/1000/500" alt="img8">
+            <img src="https://picsum.photos/id/236/1000/500" alt="img9">
+        </div>
+    </div>
+
+    <!-- PAGE 3 -->
+
+    <div class="page-3"></div>
+
+    <script
+      src="https://kit.fontawesome.com/c67f901523.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
