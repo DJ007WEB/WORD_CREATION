@@ -12,6 +12,10 @@ mobileNav.addEventListener('click' , () => {
     const cross = document.querySelector('.cross');
 
     cross.classList.toggle('hidden');
+
+    const navOpt =  document.querySelector('.nav-options');
+
+    navOpt.classList.toggle('translate-x-full');
 })
 
 
