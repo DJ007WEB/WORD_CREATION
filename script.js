@@ -33,12 +33,16 @@ const leftBtn = document.querySelector('.left-btn');
 console.log(leftBtn);
 
 leftBtn.addEventListener('click', () => {
-    counter--;
+    if(counter > (-8)) {
+        counter--;
+    }
     sliderWork(counter);
 })
 
 document.querySelector('.right-btn').addEventListener('click', () => {
-   counter++;
+   if(counter < 8) {
+    counter++
+}
    sliderWork(counter);
 })
 
@@ -47,4 +51,32 @@ function sliderWork(i) {
         img.style.transform = `translateX(-${i * 100}%)`;
     })
 }
+
+//  HIDING NAV BAR ON SCROLLING
+
+const navBar = document.querySelector('.header');
+
+window.addEventListener('wheel', (e) => {
+    if(e.deltaY > 0) {
+        navBar.classList.remove('flex');
+        navBar.classList.add('hidden');
+    } else if(e.deltaY < 0) {
+        navBar.classList.remove('hidden');
+        navBar.classList.add('flex');
+    }
+})
+
+// FAQ SECTION
+
+const accordians = document.querySelectorAll('.accordian');
+
+accordians.forEach((accordian) => {
+    const dropDown = accordian.querySelector('.ques-dropDown');
+    const ans = accordian.querySelector('.ans');
+
+    dropDown.addEventListener('click', () => {
+        ans.classList.toggle('active');
+        dropDown.classList.toggle('active');
+    })
+})
 
