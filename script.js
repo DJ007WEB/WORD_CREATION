@@ -78,7 +78,7 @@ accordians.forEach((accordian) => {
     const dropDown = accordian.querySelector('.ques-dropDown');
     const ans = accordian.querySelector('.ans');
 
-    dropDown.addEventListener('click', () => {
+    accordian.addEventListener('click', () => {
         ans.classList.toggle('active');
         dropDown.classList.toggle('active');
     })
