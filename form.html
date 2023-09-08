@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FORM</title>
+    <title>For Orders</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-slate-950">
@@ -34,41 +34,41 @@
 
     
         <div class="box w-full md:w-1/2 h-screen md:h-3/4 m-auto flex justify-center items-center rounded-xl bg-transparent">
-            <form class="items-center px-14 py-8">
+            <form action="https://formspree.io/f/mleynved" method="POST" class="items-center px-14 py-8">
               <h3 class="capitalize text-white text-center text-xl md:text-3xl">Please fill the details. <br>We will get back to you <span class="uppercase text-green-400">asap</span></h3>
               <!-- FIRST NAME -->
               <div class="inputbox">
-                  <input type="text" required autocomplete="false" class="inp-box">
+                  <input type="text" name="FirstName" required autocomplete="false" class="inp-box">
                   <span>Firstname</span>
                   <i></i>
               </div>
               <!-- LAST NAME -->
               <div class="inputbox">
-                  <input type="text" required autocomplete="false" class="inp-box">
+                  <input type="text" name="LastName" required autocomplete="false" class="inp-box">
                   <span>Lastname</span>
                   <i></i>
               </div>
               <!-- UNIVERSITY NAME -->
               <div class="inputbox">
-                  <input type="text" required autocomplete="false" class="inp-box">
+                  <input type="text" name="UniverSity Name" required autocomplete="false" class="inp-box">
                   <span>University Name</span>
                   <i></i>
               </div>
               <!-- MODULE CODE -->
               <div class="inputbox">
-                  <input type="text" required autocomplete="false" class="inp-box">
+                  <input type="text" name="Module Code" required autocomplete="false" class="inp-box">
                   <span>Module Code</span>
                   <i></i>
               </div>
               <!-- EMAIL -->
               <div class="inputbox">
-                  <input type="email" required autocomplete="false" class="inp-box">
+                  <input type="email" name="Email" required autocomplete="false" class="inp-box">
                   <span>Email</span>
                   <i></i>
               </div>
               <!-- PHONE NO -->
               <div class="inputbox">
-                  <input type="text"required autocomplete="false" class="inp-box">
+                  <input type="text" name="Mobile No" required autocomplete="false" class="inp-box">
                   <span>Mobile No : Country Code & Number</span>
                   <i></i>
               </div>
