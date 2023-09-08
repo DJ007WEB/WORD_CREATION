@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-slate-950">
+    <!-- HEADER NAVIGATION SECTION -->
+
+    <header>
+      <div class="flex h-auto justify-between items-center md:px-16 md:py-2 px-4">
+        <!-- LOGO -->
+        <div class="sample-navLogo">
+          <h4 class="text-4xl font-extrabold text-amber-900">
+            <a href="index.html">Word Creation</a>
+          </h4>
+        </div>
+        <!-- BUTTON -->
+        <div class="sam-navBtn">
+          <button
+            class="border-transparent rounded-md border-solid border-2 px-4 py-2 font-semibold text-red-500 hover:bg-orange-700 hover:text-white transition-all duration-500"
+          >
+            <a href="index.html">Home Page</a>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- FORM PART -->
+    <main>
+        <div class="main-part w-full h-3/4 flex justify-center my-4">
+            <div class="form-parent grow  h-full flex justify-center py-8">
+                <form action="" method="post" class="w-3/4">
+                  <!-- NAME AND NUMBER SAME CONTAINER -->
+                    <div class="same-cont md:flex justify-between gap-2">
+                      <div class="child-inputs">
+                        <input class="f-input" type="text" name="Name" id="name" required autocomplete="false">
+                        <label class="f-label" for="name"><i class="fa-regular fa-user"></i><span class="mx-2">Your Name</span></label>
+                    </div>
+                    <div class="child-inputs">
+                        <input class="f-input" type="text" name="Phone Number" id="phone" required autocomplete="false">
+                        <label class="f-label" for="phone"><i class="fa-solid fa-square-phone"></i><span class="mx-2">Mobile No : Country Code & Number</span></label>
+                    </div>
+                    </div>
+                    <div class="child-inputs">
+                        <input class="f-input" type="email" name="Email" id="email" required autocomplete="false">
+                        <label class="f-label"  for="email"><i class="fa-brands fa-mailchimp"></i><span class="mx-2">Mail Id</span></label>
+                    </div>
+                    <div class="child-inputs my-10">
+                        <textarea class="f-input" id="message" name="Message" rows="8" required autocomplete="false"></textarea>
+                        <label class="f-label" for="message"><i class="fa-regular fa-comment"></i><span class="mx-2">Comment : Your Query</span></label>
+                    </div>
+                    <button class="f-btn" type="submit"><span class="mx-2">SUBMIT</span><i class="fa-regular fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- FONT AWSOME SCRIPT HERE -->
+    <script
+      src="https://kit.fontawesome.com/c67f901523.js"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
+</html>
